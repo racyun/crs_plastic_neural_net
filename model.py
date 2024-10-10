@@ -1,11 +1,5 @@
-import matplotlib.pyplot as plt
-from google.colab import drive
-from tqdm import tqdm
-from sklearn.model_selection import train_test_split
 import torch
-from torch.utils.data import TensorDataset, DataLoader
 import torch.nn as nn
-import torch.optim as optim
 
 class ThreeLayerNet(nn.Module):
     def __init__(self):

@@ -1,15 +1,3 @@
-import numpy as np
-import sys
-import os
-import matplotlib.pyplot as plt
-from google.colab import drive
-from tqdm import tqdm
-from sklearn.model_selection import train_test_split
-import torch
-from torch.utils.data import TensorDataset, DataLoader
-import torch.nn as nn
-import torch.optim as optim
-
 def train_one_epoch(epoch_index, train_loader, optimizer, model, criterion):
     running_loss = 0.
     last_loss = 0.
